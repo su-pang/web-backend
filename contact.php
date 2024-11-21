@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 3. 에러가 없을 경우 처리
     if (empty($errors)) {
         // 예제: 이메일 전송
-        $to = "your_email@example.com"; // 실제 수신 이메일 주소
+        $to = "sa2840@naver.com"; // 실제 수신 이메일 주소
         $subject = "New Contact Form Submission";
         $body = "Name: $name\nEmail: $email\nMessage:\n$message";
         $headers = "From: $email";
