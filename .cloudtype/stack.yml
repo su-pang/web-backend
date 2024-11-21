@@ -1,0 +1,12 @@
+version: '1.0'
+name: php-app
+services:
+  - name: php-service
+    image: cloudtype/php:8.1          # PHP 버전 선택 (예: 8.0, 8.1)
+    ports:
+      - 8080                         # PHP 내장 서버에서 사용할 포트
+    environment:
+      - PHP_MEMORY_LIMIT=512M        # PHP 메모리 제한
+      - PHP_MAX_EXECUTION_TIME=30    # PHP 최대 실행 시간
+    command: php -S 0.0.0.0:8080 -t /workspace
+
