@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");  // 모든 도메인 허용, 필요한 경우 특정 도메인으로 제한 가능
 header("Content-Type: application/json"); // JSON 응답을 반환하도록 설정
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
