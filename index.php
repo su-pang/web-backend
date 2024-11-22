@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Welcome to My PHP Application</h1>
+    <p>hi</p>
     <p>Today is: <?php echo date('Y-m-d'); ?></p>
     <a href="contact.php">Contact Us</a>
 </body>
